@@ -39,6 +39,7 @@
         state: directory
       delegate_to: backup-server
       run_once: true
+      become: true
 
     - name: save configuration to backup server
       copy:
@@ -47,6 +48,7 @@
       when: config_output is defined
       become: yes
       delegate_to: backup-server
+      become: true
 
     - name: find backups
       find:
