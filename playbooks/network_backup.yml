@@ -18,7 +18,7 @@
       debug:
         msg:
           - "{{ lookup('env', 'CONTROLLER_USERNAME') }}"
-          - "{{ lookup('env', 'CONTROLLER_PASSWORD') }}"
+          #- "{{ lookup('env', 'CONTROLLER_PASSWORD') }}"
           - "{{ lookup('env', 'CONTROLLER_HOST') }}"
 
     - name: backup configuration
